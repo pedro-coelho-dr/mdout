@@ -8,7 +8,7 @@
 
 Make sure you have Go installed. Then run:
 
-```bash
+```console
 go install github.com/pedro-coelho-dr/mdout@latest
 ```
 
@@ -17,7 +17,7 @@ This installs mdout into your `$GOPATH/bin` (or `$HOME/go/bin`) directory, which
 ### Building from Source
 Clone the repository and build the executable:
 
-```bash
+```console
 git clone https://github.com/pedro-coelho-dr/mdout.git
 cd mdout
 go build -o mdout
@@ -29,13 +29,13 @@ This produces an executable named `mdout` in the current directory.
 
 Use `mdout` as a filter to capture command output. For example: 
 
-```bash
+```console
 ls | mdout
 ```
 
 Which writes to the Markdown file and still displays on terminal:
 
-```bash
+```console
 ls | mdout
 
 LICENSE
@@ -50,7 +50,7 @@ mdout
 
 ## Commands
 
-```bash
+```console
 mdout [command]
 
 Available Commands:
@@ -59,7 +59,7 @@ Available Commands:
   version     Print the version of mdout
 ```
 
-```bash
+```console
 mdout config [flags]
 
 -c, --capture string    Set command capture method (none, zsh)
@@ -67,7 +67,7 @@ mdout config [flags]
 -o, --output string     Set output file name (e.g., mdout.md or mdout)
 ```
 Example:
-```bash
+```console
 mdout config --capture=zsh --language=bash --output=mylog
 ```
 
